@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import maestro from "../../Assets/Projects/maestro.png";
+
+import ferreteria from "../../Assets/Projects/ferreteria.png";
+import aprendehoyenlinea from "../../Assets/Projects/aprendehoyenlina.png";
+import trycatch from "../../Assets/Projects/trycatchfactory.png";
+import aerolinea from "../../Assets/Projects/aerolinea.png";
+
 
 function Projects() {
   return (
@@ -23,70 +24,59 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={trycatch}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="TryCatch Factory"
+              description="A software factory dedicated to delivering cutting-edge software solutions for startups, enterprises, and internal company projects, with the mission of transforming the world through code and programming. Built with Next.js, TypeScript, React, Java, and JavaScript, TryCatch Factory specializes in integrations with platforms like Shopify and Salesforce, portfolio creation, and process automation. The project enhances communication and automates processes between companies and their clients, making technology more accessible and efficient for everyday users. My role extends beyond technical contributions; I support the marketing team by bridging the gap between complex technology and clients with little to no technical knowledge. This dual expertise in marketing and programming allows me to lead communication efforts across the entity's social media channels, ensuring clear and effective messaging."
+              ghLink="https://github.com/Try-Catch-Factory/t8.fe-salesforce-academy"
+              demoLink="https://trycatchfactory.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={aprendehoyenlinea}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="www.aprendehoyenlinea.com"
+              description="A comprehensive portfolio for a language academy, hosted on a custom-built website utilizing JavaScript, HTML, CSS, and Node.js for deployment. The project showcases the academy's offerings and enhances user experience by providing a seamless, intuitive interface. My role was to lead and assemble the development team, ensuring that the project was executed efficiently using the SCRUM methodology. This approach allowed for effective collaboration and timely delivery of the final product."
+              ghLink="https://aprendehoyenlinea.com/"
+              demoLink="https://aprendehoyenlinea.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={ferreteria}
               isBlog={false}
-              title="Editor.io"
+              title="ACME Ferretería"
               description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              ghLink="https://github.com/Latinohablante/Ferreteria"
+              demoLink="https://latinohablante.github.io/Ferreteria/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={maestro}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Construction Portfolio for a Tile Installer"
+              description="A personalized web portfolio for a construction professional specializing in façade finishes, built entirely by me using HTML, CSS, and JavaScript. The portfolio showcases the full range of services offered, including painting, bathroom installation, plumbing, tile installation, and kitchen and bathroom finishes. To engage visitors, the site includes a custom-built game where users connect matching tiles, reflecting the craftsmanship involved in tile installation. The design is visually appealing and closely tied to the theme of tiles, offering an attractive and cohesive experience. The site also features user login and registration functionality, ensuring a personalized experience for clients and potential customers."
+              ghLink="https://github.com/Latinohablante/tile-installer"
+              demoLink="https://latinohablante.github.io/tile-installer/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={aerolinea}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Vuelos Globales"
+              description="A comprehensive management system for an airline, developed in Java, designed to handle all aspects of airline operations. The system includes features such as aircraft and model management, maintenance and inspection scheduling, crew administration, route and layover management, and a robust reservation and customer system. Additionally, it manages fare structures and document types, providing a complete solution for airline operations. This project ensures efficient management and smooth operations, meeting the complex needs of modern airlines."
+              ghLink="https://github.com/diegodfp/aerolinea"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
